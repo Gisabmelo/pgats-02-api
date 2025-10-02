@@ -4,7 +4,7 @@ const {expected, expect} = require('chai');
 
 //Testes
 describe ('Login',() => {    
-    it ('Deve retornar 200 com credencias validas', async () => {
+    it ('Quando informo valores validos, tenho login bem sucedido com 200 CREATED', async () => {
     describe ('POST/users/login',() => {
        before(async () => {
              const postLogin = require('../fixture/requisicoes/login/postLogin.json');

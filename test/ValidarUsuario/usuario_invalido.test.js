@@ -3,7 +3,7 @@ const request = require('supertest'); //requisicoes de API
 const {expected, expect} = require('chai');
 
 describe ('Login',() => {    
-    it ('Deve retornar 400 com credencias invalidas', async () => {
+    it ('Quando informo valores invalidos, tenho login mal sucedido com 400 BAD REQUEST', async () => {
     describe ('POST/users/login',() => {
        before(async () => {
              const postLogin = require('../fixture/requisicoes/login/postLogin.json');
